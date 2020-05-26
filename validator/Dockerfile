@@ -14,6 +14,7 @@ WORKDIR ${APP_DIR}
 COPY requirements.txt .
 RUN pip3 install --upgrade pip && \
     pip3 install flask && \
+    pip3 install flask_cors && \
     pip3 install -r requirements.txt
 
 # expose http port
