@@ -1,6 +1,5 @@
 import mysql.connector
 from flask import jsonify
-from bson.json_util import dumps
 from flask import Flask, request
 from flask_cors import CORS
 
