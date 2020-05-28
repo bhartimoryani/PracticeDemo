@@ -15,7 +15,7 @@ curl -O https://download.docker.com/linux/ubuntu/dists/bionic/pool/edge/amd64/co
 sudo apt install ./containerd.io_1.2.2-3_amd64.deb  &&
 #Install Docker CE
 sudo apt install docker-ce  -y  &&
-sudo cu-L "https://github.com/docker/compose/releases/download/1.25.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose  &rl &
+sudo curl -L "https://github.com/docker/compose/releases/download/1.25.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose &&
 sudo chmod +x /usr/local/bin/docker-compose  &&
 sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 #now we are done with installation and we will write a welcome message
