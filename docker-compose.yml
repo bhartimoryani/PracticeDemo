@@ -20,6 +20,8 @@ services:
       MYSQL_PASSWORD: password
       MYSQL_DATABASE: UID
       MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - ./validatorDB:/docker-entrypoint-initdb.d/:ro
       
 networks:
   my-net:
